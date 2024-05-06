@@ -1,0 +1,235 @@
+:root{
+    --red: hsl(1, 90%, 64%);
+    --blue: hsl(219, 85%, 26%);
+    --veryLightGrayishBlue: hsl(210, 60%, 98%);
+    --lightGrayishBlue1: hsl(211, 68%, 94%);
+    --lightGrayishBlue2: hsl(205, 33%, 90%);
+    --grayishBlue: hsl(219, 14%, 63%);
+    --darkGrayishBlue: hsl(219, 12%, 42%);
+    --veryDarkBlue: hsl(224, 21%, 14%);
+}
+    
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 0.875rem;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--darkGrayishBlue);
+}
+
+
+/*MAIN*/
+
+.container{
+    max-width: 21.4375rem;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5rem 0 2.5rem;
+}
+
+.title{
+    font-size: 1.25rem;
+    color: var(--veryDarkBlue);
+}
+
+.title span{
+    display: inline-block;
+    width: 2rem;
+    height: 1.5625rem;
+    margin-left: 0.3rem;
+    font-size: 1rem;
+    background-color: var(--blue);
+    color: #fff;
+    text-align: center;
+    vertical-align: bottom;
+    border-radius: 0.3rem;
+}
+
+.button-allread{
+    font-size: inherit;
+    font-family: inherit;
+    color: inherit;
+    border: none;
+    background-color: #fff;
+}
+
+.button-allread:hover{
+    cursor: pointer;
+    color: var(--blue);
+}
+
+.notification{
+    margin-bottom: 2.5rem;
+    padding-left: 4rem;
+    padding-right: 0.5rem;
+    word-spacing: 0.15rem;
+    position: relative;
+}
+
+.notification::before{
+    content: '';
+    width: 2.5rem;
+    height: 2.5rem;
+    display: inline-block;
+    background: url(./images/avatar-mark-webber.webp) no-repeat center / contain;
+    position: absolute;
+        left: 0.7rem;
+}
+
+.unread::after{
+    content: '';
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    margin-left: 0.5rem;
+    background-color: var(--red);
+    border-radius: 50%;
+}
+
+.Angela::before{
+    background: url(./images/avatar-angela-gray.webp) no-repeat center / contain;
+}
+
+.Jacob::before{
+    background: url(./images/avatar-jacob-thompson.webp) no-repeat center / contain;
+}
+
+.Rizky::before{
+    background: url(./images/avatar-rizky-hasanuddin.webp) no-repeat center / contain;
+}
+
+.Kimberly{
+    padding-right: 4.8rem;
+}
+
+.Kimberly::before{
+    background: url(./images/avatar-kimberly-smith.webp) no-repeat center / contain;
+}
+
+.Kimberly::after{
+    content: '';
+    width: 2.5rem;
+    height: 2.5rem;
+    display: inline-block;
+    background: url(./images/image-chess.webp) no-repeat center / contain;
+    position: absolute;
+        top: 0; right: 0.5rem;    
+}
+
+.Kimberly:hover::after{
+    cursor: pointer;
+}
+
+.Nathan::before{
+    background: url(./images/avatar-nathan-peterson.webp) no-repeat center / contain;
+}
+
+.Anna::before{
+    background: url(./images/avatar-anna-kim.webp) no-repeat center / contain;
+}
+
+.name{
+    color: var(--veryDarkBlue);
+    font-weight: 800;
+}
+
+.name:hover{
+    cursor: pointer;
+    color: var(--blue);
+}
+
+.name a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.post{
+    font-weight: 800;
+}
+
+.post:hover{
+    cursor: pointer;
+    color: var(--blue);
+}
+
+.date{
+    color: var(--grayishBlue);
+    display: block;
+    margin: 0.25rem 0 0.5rem;
+}
+
+.text{
+    outline: 1px solid hsla(219, 12%, 42%, 0.3);
+    padding: 1rem 1.5rem 1rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.text:hover{
+    cursor: pointer;
+    background-color: var(--lightGrayishBlue1);
+}
+
+.club{
+    font-weight: 800;
+    color: var(--blue);
+}
+
+.club:hover{
+    cursor: pointer;
+}
+
+@media screen and (min-width: 50rem)
+{
+
+    body{
+        font-size: 1rem;
+    }
+
+    .header-container{
+        margin: 6rem 0 3rem;
+    }
+
+    .title{
+        font-size: 1.5rem;
+    }
+
+    .title span{
+        position: relative;
+            bottom: 0.2rem;
+    }
+
+    .container{
+        max-width: 45.625rem;
+        padding: 0 1.875rem 0;
+        margin-bottom: 6rem;
+    }
+
+    .notification{
+        padding-left: 4.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .notification::before{
+        position: absolute;
+            left: 1rem;
+    }
+
+    .Kimberly::after{
+        position: absolute;
+            top: 0; right: 1.5rem;
+    }
+
+}

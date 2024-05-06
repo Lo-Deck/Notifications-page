@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="description" content="Exercise Frontend Mentor, Notifications page">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200..800&display=swap" rel="stylesheet">
+      <link href="style.css" rel="stylesheet" type="text/css">
+      <title>Frontend Mentor | Notifications page</title>
+    </head>
+    <body>
+
+      <main class="container">
+
+        <header class="header-container">
+          <h1 class="title">Notifications <span id="notif-unread">3</span></h1>
+          <button class="button-allread" id="markAllRead" tabIndex="0">Mark all as read</button>
+        </header>
+
+        <div class="notification Mark"><p class="unread"><span class="name"><a href="#">Mark Webber</a></span> reacted to your recent post <span class="post">My first tournament today!</span></p>
+          <span class="date">1m ago</span>
+        </div>
+
+        <div class="notification Angela"><p class="unread"><span class="name"><a href="#">Angela Gray</a></span> followed you</p>
+          <span class="date">5m ago</span>
+        </div>
+
+        <div class="notification Jacob"><p class="unread"><span class="name"><a href="#">Jacob Thompson</a></span> has joined your group <span class="club">Chess Club</span></p>
+          <span class="date">1 day ago</span>
+        </div>
+
+        <div class="notification Rizky"><p><span class="name"><a href="#">Rizky Hasanuddin</a></span> sent you a private message</p>
+          <span class="date">5 days ago</span>
+          <p class="text">Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+          I'm already having lots of fun and improving my game.</p>
+        </div>
+
+        <div class="notification Kimberly"><p><span class="name"><a href="#">Kimberly Smith</a></span> commented on your picture</p>
+          <span class="date">1 week ago</span>
+        </div>
+
+        <div class="notification Nathan"><p><span class="name"><a href="#">Nathan Peterson</a></span> reacted to your recent post <span class="post">5 end-game strategies to increase your win rate</span></p>
+          <span class="date">2 weeks ago</span>
+        </div>
+
+        <div class="notification Anna"><p><span class="name"><a href="#">Anna Kim</a></span> left the group <span class="club">Chess Club</span></p>
+          <span class="date">2 weeks ago</span>
+        </div>
+        
+      </main>
+
+    <script  src="./script.js"></script>
+
+    </body>
+
+</html>
